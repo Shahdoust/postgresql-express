@@ -1,7 +1,11 @@
 const express = require("express");
 const app = express();
+
 require("colors");
 require("dotenv").config();
+
+const colors = require("cors");
+app.use(cors());
 
 const { Pool, Client } = require("pg");
 
