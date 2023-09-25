@@ -4,7 +4,7 @@ const app = express();
 require("colors");
 require("dotenv").config();
 
-const colors = require("cors");
+const cors = require("cors");
 app.use(cors());
 
 const { Pool, Client } = require("pg");
